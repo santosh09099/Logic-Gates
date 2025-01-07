@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logic Gates Circuit Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <button id="showTruthTable">Show Truth Table</button>
+    <div id="truthTable" hidden>
+        <table>
+            <thead>
+                <tr>
+                    <th>A</th>
+                    <th>B</th>
+                    <th>Y</th>
+                </tr>
+            </thead>
+            <tbody id="truthTableBody"></tbody>
+        </table>
+    </div>
+    <div id="gates">
+        <div class="gate" id="and" draggable="true">AND</div>
+        <div class="gate" id="or" draggable="true">OR</div>
+        <div class="gate" id="not" draggable="true">NOT</div>
+        <div class="gate" id="nand" draggable="true">NAND</div>
+        <div class="gate" id="nor" draggable="true">NOR</div>
+        <div class="gate" id="xor" draggable="true">XOR</div>
+        <div class="gate" id="xnor" draggable="true">XNOR</div>
+    </div>
+    <div id="circuitBoard"></div>
+    <script src="script.js"></script>
+</body>
+
+</html>
